@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Завантаження веселого уроку...</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Fredoka & Nunito for child-friendly legibility -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            kids: {
+              yellow: '#FFDE59',
+              orange: '#FF914D',
+              pink: '#FF66C4',
+              purple: '#8C52FF',
+              blue: '#5CE1E6',
+              green: '#7ED957',
+              darkBg: '#2C1B4D'
+            }
+          },
+          fontFamily: {
+            sans: ['Nunito', 'sans-serif'],
+            heading: ['Fredoka', 'cursive'],
+          },
+          boxShadow: {
+            'pop': '0 8px 0 0 rgba(0, 0, 0, 0.15)',
+            'pop-sm': '0 4px 0 0 rgba(0, 0, 0, 0.12)',
+            'pop-hover': '0 12px 0 0 rgba(0, 0, 0, 0.15)',
+            'kids': '0 10px 25px -5px rgba(140, 82, 255, 0.25)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles for Kid-friendly UI Animations & Typography -->
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: #F4F0FF;
+      background-image: radial-gradient(#E2D5FF 2px, transparent 2px);
+      background-size: 28px 28px;
+    }
+    .font-heading {
+      font-family: 'Fredoka', cursive;
+    }
+    /* Dynamic Font Size Classes toggled via JS */
+    .text-size-normal { font-size: 1.125rem; line-height: 1.75rem; } /* text-lg */
+    .text-size-large  { font-size: 1.25rem; line-height: 1.875rem; } /* text-xl */
+    .text-size-xlarge { font-size: 1.375rem; line-height: 2rem; }    /* text-2xl */
+
+    /* Bouncy Button Animation */
+    .bounce-hover {
+      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .bounce-hover:hover {
+      transform: translateY(-4px) scale(1.02);
+    }
+    .bounce-hover:active {
+      transform: translateY(2px) scale(0.98);
+    }
+
+    /* Floating background items */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(5deg); }
+    }
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+    .animate-float-delayed {
+      animation: float 5s ease-in-out 1.5s infinite;
+    }
+  </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-kids-pink selection:text-white pb-16">
+
+  <!-- Top Kid Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b-4 border-kids-purple/20 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo & Title -->
+      <div class="flex items-center space-x-3 sm:space-x-4">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-kids-purple to-kids-pink flex items-center justify-center text-2xl shadow-pop-sm text-white transform -rotate-3 hover:rotate-0 transition">
+          🚀
+        </div>
+        <div>
+          <span id="header-tag" class="text-xs sm:text-sm font-black text-kids-purple uppercase tracking-wider block bg-kids-purple/10 px-2.5 py-0.5 rounded-full w-max">
+            Завантаження...
+          </span>
+          <h1 id="header-title" class="text-base sm:text-xl font-bold font-heading text-slate-800 line-clamp-1">
+            Весела Інформатика 🎈
+          </h1>
+        </div>
+      </div>
+
+      <!-- Controls: Font Size Switcher & Badge -->
+      <div class="flex items-center space-x-2 sm:space-x-4">
+        
+        <!-- Font Size Adjuster for Kids/Accessibility -->
+        <div class="flex items-center bg-purple-100 p-1 rounded-2xl border-2 border-kids-purple/30">
+          <button id="btn-font-normal" onclick="setFontSize('normal')" class="px-2.5 py-1 rounded-xl font-bold text-xs sm:text-sm transition bg-white text-kids-purple shadow-sm">
+            А
+          </button>
+          <button id="btn-font-large" onclick="setFontSize('large')" class="px-2.5 py-1 rounded-xl font-bold text-sm sm:text-base transition text-slate-600 hover:text-kids-purple">
+            А+
+          </button>
+          <button id="btn-font-xlarge" onclick="setFontSize('xlarge')" class="px-2.5 py-1 rounded-xl font-extrabold text-base sm:text-lg transition text-slate-600 hover:text-kids-purple">
+            А++
+          </button>
+        </div>
+
+        <!-- Class/Badge Indicator -->
+        <div id="header-badge-container" class="hidden sm:flex items-center space-x-2 text-sm font-bold text-purple-900 bg-kids-yellow px-4 py-2 rounded-2xl border-2 border-yellow-400 shadow-pop-sm">
+          <span>🌟</span>
+          <span id="header-badge">Урок</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-white py-12 md:py-16 relative overflow-hidden shadow-lg border-b-8 border-kids-yellow">
+    
+    <!-- Decorative Floating Elements -->
+    <div class="absolute -top-6 -left-6 text-6xl opacity-30 animate-float pointer-events-none">🎈</div>
+    <div class="absolute top-1/2 right-4 text-7xl opacity-25 animate-float-delayed pointer-events-none">⭐</div>
+    <div class="absolute bottom-2 left-1/3 text-5xl opacity-20 animate-float pointer-events-none">🎨</div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
+      
+      <div id="hero-subject" class="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md border-2 border-white/40 px-4 py-1.5 rounded-full text-white text-sm sm:text-base font-bold mb-4 shadow-sm">
+        <span>⭐ Завантаження предмета...</span>
+      </div>
+
+      <h1 id="hero-title" class="text-3xl sm:text-5xl lg:text-6xl font-black font-heading tracking-wide text-white mb-4 drop-shadow-md leading-tight">
+        Завантажуємо цікавий урок...
+      </h1>
+
+      <p id="hero-desc" class="text-white/95 text-lg sm:text-2xl font-semibold max-w-3xl leading-relaxed mb-6 drop-shadow-sm">
+        Будь ласка, зачекай хвилинку. Готуємо цікаві завдання та малюнки! 🎨✨
+      </p>
+
+      <div id="hero-career" class="bg-white/95 text-slate-800 rounded-3xl p-5 border-4 border-kids-yellow shadow-pop flex items-start space-x-4 max-w-2xl hidden transform rotate-1">
+        <span class="text-3xl flex-shrink-0">💡</span>
+        <p id="hero-career-text" class="text-base sm:text-lg font-bold leading-snug text-purple-900"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Layout -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      
+      <!-- Kid Sidebar / Interactive Navigation -->
+      <aside class="lg:col-span-3">
+        <div class="sticky top-28 bg-white rounded-3xl p-6 border-4 border-purple-200 shadow-pop">
+          <div class="flex items-center space-x-2 mb-4 pb-3 border-b-2 border-purple-100">
+            <span class="text-2xl">🗺️</span>
+            <h2 class="text-lg font-black font-heading text-purple-900 uppercase tracking-wide">Карта уроку</h2>
+          </div>
+          <nav id="toc" class="space-y-2 text-base font-bold max-h-[calc(100vh-200px)] overflow-y-auto pr-1">
+            <!-- Dynamic TOC Generated Here -->
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Main Article Content -->
+      <main id="content" class="lg:col-span-9 space-y-10">
+        <!-- Dynamic Blocks Rendered Here -->
+        <div class="text-center py-12">
+          <div class="inline-block animate-spin text-5xl mb-4">🌀</div>
+          <p class="text-xl font-bold text-purple-800">Готуємо пригоду...</p>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <script>
+    // Global Font Size state
+    let currentFontSizeClass = 'text-size-normal';
+
+    function setFontSize(size) {
+      const contentEl = document.getElementById('content');
+      contentEl.classList.remove('text-size-normal', 'text-size-large', 'text-size-xlarge');
+      
+      // Update active button state
+      document.getElementById('btn-font-normal').className = "px-2.5 py-1 rounded-xl font-bold text-xs sm:text-sm transition text-slate-600 hover:text-kids-purple";
+      document.getElementById('btn-font-large').className = "px-2.5 py-1 rounded-xl font-bold text-sm sm:text-base transition text-slate-600 hover:text-kids-purple";
+      document.getElementById('btn-font-xlarge').className = "px-2.5 py-1 rounded-xl font-extrabold text-base sm:text-lg transition text-slate-600 hover:text-kids-purple";
+
+      if (size === 'normal') {
+        currentFontSizeClass = 'text-size-normal';
+        document.getElementById('btn-font-normal').className = "px-2.5 py-1 rounded-xl font-bold text-xs sm:text-sm transition bg-white text-kids-purple shadow-sm border border-kids-purple/30";
+      } else if (size === 'large') {
+        currentFontSizeClass = 'text-size-large';
+        document.getElementById('btn-font-large').className = "px-2.5 py-1 rounded-xl font-bold text-sm sm:text-base transition bg-white text-kids-purple shadow-sm border border-kids-purple/30";
+      } else if (size === 'xlarge') {
+        currentFontSizeClass = 'text-size-xlarge';
+        document.getElementById('btn-font-xlarge').className = "px-2.5 py-1 rounded-xl font-extrabold text-base sm:text-lg transition bg-white text-kids-purple shadow-sm border border-kids-purple/30";
+      }
+
+      contentEl.classList.add(currentFontSizeClass);
+    }
+
+    async function loadLesson() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const lessonId = urlParams.get('lesson') || '2627.7.3';
+      const jsonUrl = `https://raw.githubusercontent.com/InfoStudy-gymnasium201-kyiv/s/refs/heads/main/Lessons/${lessonId}.json`;
+
+      try {
+        const response = await fetch(jsonUrl);
+        if (!response.ok) throw new Error(`Не вдалося знайти урок за кодом: ${lessonId}`);
+        const lesson = await response.json();
+
+        // 1. Header Rendering
+        document.getElementById('header-tag').innerText = lesson.meta.topicTag || lesson.meta.subject || 'Урок';
+        document.getElementById('header-title').innerText = lesson.meta.title;
+        
+        if (lesson.meta.badgeText) {
+          document.getElementById('header-badge').innerText = lesson.meta.badgeText;
+          document.getElementById('header-badge-container').classList.remove('hidden');
+          document.getElementById('header-badge-container').classList.add('flex');
+        }
+
+        // 2. Hero Rendering
+        document.getElementById('page-title').innerText = `🎈 ${lesson.meta.title} | Школа`;
+        document.getElementById('hero-subject').innerHTML = `<span>⭐ ${lesson.meta.topicTag || lesson.meta.subject}</span>`;
+        document.getElementById('hero-title').innerText = lesson.meta.title;
+        document.getElementById('hero-desc').innerText = lesson.meta.description;
+
+        if (lesson.meta.careerNote) {
+          document.getElementById('hero-career').classList.remove('hidden');
+          document.getElementById('hero-career-text').innerHTML = `<strong class="text-purple-900 font-extrabold">Питання від Мудрого Сови 🦉:</strong> ${lesson.meta.careerNote}`;
+        }
+
+        // 3. Table of Contents (Sidebar)
+        const toc = document.getElementById('toc');
+        const stepEmojis = ['1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'];
+        toc.innerHTML = lesson.sections.map((sec, idx) => `
+          <a href="#${sec.id}" class="flex items-center space-x-2 text-slate-700 hover:text-purple-900 hover:bg-purple-100 p-2.5 rounded-2xl transition bounce-hover">
+            <span class="text-xl flex-shrink-0">${stepEmojis[idx % stepEmojis.length]}</span>
+            <span class="line-clamp-2">${sec.title}</span>
+          </a>
+        `).join('');
+
+        // 4. Render Main Content Sections
+        const mainContent = document.getElementById('content');
+        mainContent.className = `lg:col-span-9 space-y-10 ${currentFontSizeClass}`;
+
+        const sectionColors = [
+          'border-kids-purple bg-purple-50/50',
+          'border-kids-pink bg-pink-50/50',
+          'border-kids-orange bg-orange-50/50',
+          'border-kids-blue bg-blue-50/50',
+          'border-kids-green bg-green-50/50'
+        ];
+
+        const badgeColors = [
+          'bg-kids-purple text-white',
+          'bg-kids-pink text-white',
+          'bg-kids-orange text-white',
+          'bg-kids-blue text-slate-900',
+          'bg-kids-green text-slate-900'
+        ];
+
+        mainContent.innerHTML = lesson.sections.map((sec, index) => {
+          const colorClass = sectionColors[index % sectionColors.length];
+          const badgeClass = badgeColors[index % badgeColors.length];
+
+          return `
+            <section id="${sec.id}" class="bg-white rounded-3xl p-6 sm:p-8 border-4 ${colorClass} shadow-pop relative overflow-hidden scroll-mt-28">
+              
+              <!-- Section Header -->
+              <div class="flex items-center space-x-3 mb-6 pb-4 border-b-2 border-slate-200/80">
+                <span class="${badgeClass} font-heading font-black text-sm sm:text-base px-4 py-1.5 rounded-2xl uppercase tracking-wider shadow-sm flex items-center gap-1.5">
+                  <span>🎯</span> Крок ${sec.stepNumber}
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-black font-heading text-slate-800 leading-tight">
+                  ${sec.title}
+                </h2>
+              </div>
+
+              <!-- Blocks -->
+              ${renderBlocks(sec.content)}
+
+            </section>
+          `;
+        }).join('');
+
+      } catch (err) {
+        document.getElementById('content').innerHTML = `
+          <div class="bg-red-100 text-red-900 p-8 rounded-3xl border-4 border-red-400 shadow-pop text-center">
+            <div class="text-6xl mb-4">😿</div>
+            <h3 class="font-heading font-black text-2xl mb-2">Ой! Урок не знайдено</h3>
+            <p class="text-lg font-bold">${err.message}</p>
+            <p class="text-sm text-red-700 mt-3 bg-white/60 p-3 rounded-2xl inline-block border border-red-200">
+              Перевірте, чи правильно вказано номер уроку в адресі сайту.
+            </p>
+          </div>`;
+      }
+    }
+
+    function renderBlocks(blocks) {
+      return blocks.map(block => {
+        switch (block.type) {
+          
+          case 'paragraph':
+            return `<p class="text-slate-800 font-medium mb-6 leading-relaxed">${block.text}</p>`;
+
+          case 'image':
+            return `
+              <div class="my-8 text-center bg-purple-50 p-4 rounded-3xl border-4 border-purple-200 shadow-pop-sm">
+                <img src="${block.src}" alt="${block.alt}" class="w-full h-auto rounded-2xl border-2 border-white object-cover shadow-sm mx-auto max-h-[480px]">
+                ${block.caption ? `<p class="text-sm font-bold text-purple-900 mt-3 bg-white py-1.5 px-4 rounded-full inline-block border border-purple-200 shadow-sm">🖼️ ${block.caption}</p>` : ''}
+              </div>`;
+
+          case 'callout':
+            return `
+              <div class="bg-gradient-to-r from-emerald-100 to-teal-50 border-4 border-kids-green p-6 rounded-3xl mb-6 shadow-pop-sm relative">
+                <div class="flex items-center space-x-2 text-emerald-900 font-heading font-black text-xl mb-3">
+                  <span class="text-3xl">📢</span>
+                  <h3>${block.title}</h3>
+                </div>
+                ${block.text ? `<p class="text-emerald-950 font-semibold mb-3 leading-relaxed">${block.text}</p>` : ''}
+                ${block.items ? `
+                  <ul class="space-y-2 font-bold text-emerald-900">
+                    ${block.items.map(it => `
+                      <li class="flex items-start bg-white/80 p-2.5 rounded-2xl border border-emerald-200">
+                        <span class="text-kids-green text-xl mr-2.5">✅</span>
+                        <span>${it}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                ` : ''}
+              </div>`;
+
+          case 'acronymCard':
+            return `
+              <div class="bg-kids-darkBg text-white p-6 sm:p-8 rounded-3xl mb-8 border-4 border-kids-purple shadow-pop">
+                <h3 class="font-black font-heading text-xl sm:text-2xl text-kids-yellow mb-6 text-center flex items-center justify-center gap-2">
+                  <span>🧩</span> ${block.title}
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  ${block.items.map(it => `
+                    <div class="bg-white/10 hover:bg-white/20 border-2 border-white/20 p-4 rounded-2xl text-center bounce-hover">
+                      <div class="text-4xl font-black font-heading text-kids-pink mb-1 drop-shadow-sm">${it.letter}</div>
+                      <div class="text-lg font-black text-kids-yellow mb-1">${it.term}</div>
+                      <div class="text-sm font-semibold text-slate-200 leading-snug">${it.description}</div>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>`;
+
+          case 'categoryBlock':
+            return `
+              <div class="bg-amber-50/80 border-4 border-kids-yellow rounded-3xl p-6 mb-8 shadow-pop-sm">
+                <h3 class="font-heading font-black text-slate-900 text-xl sm:text-2xl mb-2 flex items-center gap-2">
+                  <span>📂</span> ${block.title}
+                </h3>
+                ${block.description ? `<p class="text-slate-700 font-semibold mb-4">${block.description}</p>` : ''}
+                
+                ${block.items ? `
+                  <div class="space-y-3">
+                    ${block.items.map(it => `
+                      <div class="bg-white border-2 border-amber-200 p-4 rounded-2xl shadow-sm hover:border-kids-orange transition">
+                        <div class="font-black text-kids-orange text-lg mb-1 flex items-center gap-1.5">
+                          <span>🔹</span> ${it.name}
+                        </div>
+                        <div class="text-slate-800 font-medium">${it.text}</div>
+                      </div>
+                    `).join('')}
+                  </div>
+                ` : ''}
+
+                ${block.subcategories ? `
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                    ${block.subcategories.map(sub => `
+                      <div class="bg-white border-2 border-amber-200 p-4 rounded-2xl shadow-sm">
+                        <div class="font-heading font-black text-purple-900 text-base uppercase tracking-wider mb-2 flex items-center gap-1">
+                          <span>🌟</span> ${sub.title}
+                        </div>
+                        <div class="text-slate-800 font-medium">${sub.text}</div>
+                      </div>
+                    `).join('')}
+                  </div>
+                ` : ''}
+              </div>`;
+
+          case 'summaryList':
+            return `
+              <div class="bg-gradient-to-r from-blue-100 to-indigo-50 border-4 border-kids-blue p-6 rounded-3xl mb-8 shadow-pop-sm">
+                <h3 class="font-heading font-black text-blue-950 text-xl sm:text-2xl mb-4 flex items-center gap-2">
+                  <span>🎒</span> ${block.title}
+                </h3>
+                <ul class="space-y-3 font-semibold text-slate-800">
+                  ${block.items.map(it => `
+                    <li class="flex items-start bg-white/90 p-3 rounded-2xl border border-blue-200 shadow-sm">
+                      <span class="text-2xl mr-3 flex-shrink-0">🌟</span>
+                      <div class="mt-0.5">${it}</div>
+                    </li>
+                  `).join('')}
+                </ul>
+              </div>`;
+
+          case 'questionsList':
+            return `
+              <div class="bg-purple-100/70 border-4 border-kids-purple p-6 rounded-3xl mb-8 shadow-pop-sm">
+                <h3 class="font-heading font-black text-purple-950 text-xl sm:text-2xl mb-4 flex items-center gap-2">
+                  <span>❓</span> ${block.title}
+                </h3>
+                <div class="space-y-3">
+                  ${block.items.map((q, i) => `
+                    <div class="p-4 bg-white border-2 border-purple-200 rounded-2xl flex items-start space-x-3 shadow-sm hover:shadow-md transition">
+                      <span class="w-8 h-8 bg-kids-pink text-white font-heading font-black rounded-xl flex items-center justify-center text-lg flex-shrink-0 shadow-sm">
+                        ${i + 1}
+                      </span>
+                      <p class="font-bold text-slate-800 mt-0.5">${q}</p>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>`;
+
+          case 'resources':
+            return `
+              <div class="bg-slate-900 text-white p-6 rounded-3xl border-4 border-kids-blue shadow-pop mb-6">
+                <h3 class="font-heading font-black text-lg text-kids-blue uppercase tracking-wider mb-4 flex items-center gap-2">
+                  <span>🔗</span> ${block.title}
+                </h3>
+                <div class="flex flex-wrap gap-3">
+                  ${block.links.map(link => `
+                    <a href="${link.url}" target="_blank" class="inline-flex items-center space-x-2 bg-kids-purple hover:bg-purple-500 text-white px-5 py-3 rounded-2xl font-bold text-base transition bounce-hover shadow-md">
+                      <span>🚀 ${link.label}</span>
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                  `).join('')}
+                </div>
+              </div>`;
+
+          case 'definition':
+            return `
+              <div class="bg-gradient-to-r from-yellow-100 to-amber-100 border-4 border-kids-yellow p-6 rounded-3xl mb-8 shadow-pop-sm relative">
+                <div class="flex items-center space-x-2 text-amber-900 font-heading font-black text-lg mb-2">
+                  <span class="text-3xl">📖</span>
+                  <h3>Важливе слово (Термін)</h3>
+                </div>
+                <p class="text-slate-900 font-bold text-lg leading-relaxed bg-white/80 p-4 rounded-2xl border border-amber-200">
+                  <strong class="text-kids-orange font-black text-xl">${block.term}</strong> — ${block.text}
+                </p>
+              </div>`;
+
+          default:
+            return '';
+        }
+      }).join('');
+    }
+
+    // Initialize on Page Load
+    window.addEventListener('DOMContentLoaded', loadLesson);
+  </script>
+</body>
+</html>
