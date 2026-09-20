@@ -186,6 +186,17 @@
     </div>
   </div>
 
+  <!-- Modal / Lightbox для збільшення зображень у дитячому стилі -->
+  <div id="image-modal" class="fixed inset-0 z-50 hidden bg-kids-darkBg/80 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300" onclick="closeModal()">
+    <div class="relative max-w-5xl w-full max-h-[90vh] flex flex-col items-center justify-center bg-white p-4 sm:p-6 rounded-3xl border-4 border-kids-yellow shadow-pop" onclick="event.stopPropagation()">
+      <button onclick="closeModal()" class="absolute -top-4 -right-4 bg-kids-pink hover:bg-pink-600 text-white text-2xl font-black w-10 h-10 rounded-full border-2 border-white shadow-pop-sm flex items-center justify-center bounce-hover transition" title="Закрити (Esc)">
+        ✕
+      </button>
+      <img id="modal-img" src="" alt="" class="max-w-full max-h-[75vh] object-contain rounded-2xl border-2 border-purple-100">
+      <p id="modal-caption" class="text-purple-950 font-bold text-base sm:text-lg mt-4 text-center px-4 max-w-2xl bg-purple-50 py-2 px-4 rounded-2xl border border-purple-200 shadow-sm"></p>
+    </div>
+  </div>
+
   <script>
     // Global Font Size state
     let currentFontSizeClass = 'text-size-normal';
@@ -321,7 +332,7 @@
           case 'image':
             return `
               <div class="my-8 text-center bg-purple-50 p-4 rounded-3xl border-4 border-purple-200 shadow-pop-sm">
-                <img src="${block.src}" alt="${block.alt}" class="w-full h-auto rounded-2xl border-2 border-white object-cover shadow-sm mx-auto max-h-[480px]">
+                <img src="${block.src}" alt="${block.alt || ''}" onclick="openModal('${block.src}', '${(block.caption || block.alt || '').replace(/'/g, "\\'")}')" class="w-full h-auto rounded-2xl border-2 border-white object-cover shadow-sm mx-auto max-h-[480px] cursor-pointer transition-transform hover:scale-[1.02]" title="🔍 Натисни, щоб збільшити!">
                 ${block.caption ? `<p class="text-sm font-bold text-purple-900 mt-3 bg-white py-1.5 px-4 rounded-full inline-block border border-purple-200 shadow-sm">🖼️ ${block.caption}</p>` : ''}
               </div>`;
 
@@ -464,6 +475,38 @@
         }
       }).join('');
     }
+
+    // Функції керування модальним вікном збільшення зображень
+    function openModal(src, caption) {
+      const modal = document.getElementById('image-modal');
+      const modalImg = document.getElementById('modal-img');
+      const modalCaption = document.getElementById('modal-caption');
+
+      modalImg.src = src;
+      if (caption) {
+        modalCaption.innerText = '🖼️ ' + caption;
+        modalCaption.classList.remove('hidden');
+      } else {
+        modalCaption.innerText = '';
+        modalCaption.classList.add('hidden');
+      }
+
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Заблокувати скрол фону
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('image-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = ''; // Відновити скрол фону
+    }
+
+    // Закриття через клавішу Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
 
     // Initialize on Page Load
     window.addEventListener('DOMContentLoaded', loadLesson);
