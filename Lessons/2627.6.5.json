@@ -1,6 +1,6 @@
 {
   "meta": {
-    "topicTag": "Тема 3 • Відкриття 5-6",
+    "topicTag": "Урок 5",
     "badgeText": "Електронний підручник",
     "title": "Апаратна та програмна складові інформаційної системи",
     "description": "Опануйте фундаментальні принципи будови комп'ютера, взаємозв'язок між «залізом» і програмним забезпеченням, а також дізнайтеся, як здійснюється управління пристроями та програмами в сучасних ОС.",
@@ -34,7 +34,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x400/f8fafc/0369a1?text=Мал.+3.1.+Інформаційний+цикл+персонального+комп'ютера",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/6.5/1.jpg?raw=true",
           "alt": "Інформаційний цикл персонального комп'ютера",
           "caption": "Мал. 3.1. Інформаційний цикл персонального комп'ютера: введення, опрацювання, зберігання та виведення даних."
         },
@@ -42,14 +42,46 @@
           "type": "acronymCard",
           "title": "Цікаво знати: Що ховається за літерами слова C-O-M-P-U-T-E-R?",
           "items": [
-            { "letter": "C", "term": "Common", "description": "загального призначення" },
-            { "letter": "O", "term": "Operating", "description": "робоча / операційна" },
-            { "letter": "M", "term": "Machine", "description": "машина / пристрій" },
-            { "letter": "P", "term": "Purposely", "description": "спеціально розроблена" },
-            { "letter": "U", "term": "Used for", "description": "використовується для" },
-            { "letter": "T", "term": "Technological", "description": "технологічних" },
-            { "letter": "E", "term": "Educational", "description": "навчальних" },
-            { "letter": "R", "term": "Research", "description": "досліджень" }
+            {
+              "letter": "C",
+              "term": "Common",
+              "description": "загального призначення"
+            },
+            {
+              "letter": "O",
+              "term": "Operating",
+              "description": "робоча / операційна"
+            },
+            {
+              "letter": "M",
+              "term": "Machine",
+              "description": "машина / пристрій"
+            },
+            {
+              "letter": "P",
+              "term": "Purposely",
+              "description": "спеціально розроблена"
+            },
+            {
+              "letter": "U",
+              "term": "Used for",
+              "description": "використовується для"
+            },
+            {
+              "letter": "T",
+              "term": "Technological",
+              "description": "технологічних"
+            },
+            {
+              "letter": "E",
+              "term": "Educational",
+              "description": "навчальних"
+            },
+            {
+              "letter": "R",
+              "term": "Research",
+              "description": "досліджень"
+            }
           ]
         }
       ]
@@ -65,7 +97,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x400/f8fafc/1e293b?text=Мал.+3.2.+Класифікаційне+дерево+пристроїв+ПК",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/6.5/2.jpg?raw=true",
           "alt": "Класифікація пристроїв персонального комп'ютера",
           "caption": "Мал. 3.2 — Класифікаційне дерево пристроїв персонального комп'ютера."
         }
@@ -82,7 +114,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x350/f0fdf4/15803d?text=Мал.+3.3.+Складові+комп'ютерної+системи+(Hardware+i+Software)",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/6.5/3.jpg?raw=true",
           "alt": "Складові комп'ютерної системи",
           "caption": "Мал. 3.3 — Складові комп'ютерної системи: Апаратне (Hardware) та Програмне забезпечення (Software)."
         }
@@ -104,7 +136,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x350/f8fafc/0f172a?text=Мал.+3.4.+Класифікаційна+схема+програмного+забезпечення",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/6.5/4.jpg?raw=true",
           "alt": "Класифікація програмного забезпечення",
           "caption": "Мал. 3.4 — Класифікаційна схема програмного забезпечення."
         }
@@ -163,7 +195,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x400/f8fafc/3b82f6?text=Мал.+3.5.+Багаторівнева+схема+взаємодії+користувача+з+складовими+ПК",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/6.5/5.jpg?raw=true",
           "alt": "Рівні взаємодії користувача та складових ПК",
           "caption": "Мал. 3.5 — Багаторівнева схема взаємодії користувача з складовими ПК."
         }
@@ -180,13 +212,13 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/600x350/ffffff/0284c7?text=Мал.+3.6.+Вікно+«Інстальовані+програми»+в+ОС+Windows",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/6.5/6.jpg?raw=true",
           "alt": "Інстальовані програми",
           "caption": "Мал. 3.6 — Вікно «Інстальовані програми» в ОС Windows"
         },
         {
           "type": "image",
-          "src": "https://placehold.co/600x350/ffffff/1e293b?text=Мал.+3.7.+Системне+вікно+«Диспетчер+пристроїв»",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/6.5/7.jpg?raw=true",
           "alt": "Диспетчер пристроїв",
           "caption": "Мал. 3.7 — Системне вікно «Диспетчер пристроїв»"
         },
