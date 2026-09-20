@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Завантаження уроку...</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 300: '#86efac',
+              400: '#4ade80', 500: '#22c55e', 600: '#16a34a', 700: '#15803d',
+              800: '#166534', 900: '#14532d', 950: '#052e16'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f8faf9] text-slate-800 antialiased selection:bg-brand-200 selection:text-brand-900">
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-b from-brand-900 via-brand-800 to-emerald-900 text-white py-12 md:py-16 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
+      <div id="hero-subject" class="inline-flex items-center space-x-2 bg-brand-500/20 backdrop-blur-md border border-brand-400/30 px-3 py-1 rounded-full text-brand-200 text-xs font-medium mb-4">
+        <span>Завантаження...</span>
+      </div>
+      <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading tracking-tight text-white mb-4">
+        ...
+      </h1>
+      <p id="hero-desc" class="text-brand-100 text-base sm:text-lg max-w-3xl leading-relaxed mb-6">
+        ...
+      </p>
+      <div id="hero-career" class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-4 sm:p-5 text-brand-50 text-sm flex items-start space-x-3 max-w-2xl hidden">
+        <p id="hero-career-text" class="leading-relaxed"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Layout -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      
+      <!-- Sidebar / Table of contents -->
+      <aside class="lg:col-span-3">
+        <div class="sticky top-10 bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
+          <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Зміст параграфа</h2>
+          <nav id="toc" class="space-y-1 text-sm max-h-[calc(100vh-160px)] overflow-y-auto pr-1">
+            <!-- Зміст згенерується динамічно -->
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Main Article Content -->
+      <main id="content" class="lg:col-span-9 space-y-10">
+        <!-- Контент згенерується динамічно -->
+      </main>
+    </div>
+  </div>
+
+  <script>
+    async function loadLesson() {
+      // Отримуємо URL JSON-файлу з параметра query string (?data=lesson.json) або за замовчуванням
+      const urlParams = new URLSearchParams(window.location.search);
+      const jsonUrl = urlParams.get('data') || 'lesson.json';
+
+      try {
+        const response = await fetch(jsonUrl);
+        if (!response.ok) throw new Error('Не вдалося завантажити JSON');
+        const lesson = await response.json();
+
+        // 1. Рендер Шапки (Hero)
+        document.getElementById('page-title').innerText = `${lesson.meta.title} | ${lesson.meta.subject}`;
+        document.getElementById('hero-subject').innerHTML = `<span>${lesson.meta.subject}</span>`;
+        document.getElementById('hero-title').innerText = lesson.meta.title;
+        document.getElementById('hero-desc').innerText = lesson.meta.description;
+
+        if (lesson.meta.careerNote) {
+          document.getElementById('hero-career').classList.remove('hidden');
+          document.getElementById('hero-career-text').innerHTML = `<strong class="text-white font-semibold">Правовий та професійний орієнтир:</strong> ${lesson.meta.careerNote}`;
+        }
+
+        // 2. Рендер Змісту (Sidebar)
+        const toc = document.getElementById('toc');
+        toc.innerHTML = lesson.sections.map(sec => `
+          <a href="#${sec.id}" class="flex items-center text-slate-600 hover:text-brand-700 hover:bg-brand-50 px-3 py-2 rounded-lg font-medium transition">
+            <span class="w-6 text-brand-600 font-bold">${sec.stepNumber}.</span> ${sec.title}
+          </a>
+        `).join('');
+
+        // 3. Рендер Секцій контенту
+        const mainContent = document.getElementById('content');
+        mainContent.innerHTML = lesson.sections.map(sec => `
+          <section id="${sec.id}" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm relative overflow-hidden scroll-mt-20">
+            <div class="flex items-center space-x-3 mb-6">
+              <span class="px-3 py-1 bg-brand-100 text-brand-800 text-xs font-bold rounded-full uppercase tracking-wider">Крок ${sec.stepNumber}</span>
+              <h2 class="text-2xl font-bold font-heading text-slate-800">${sec.title}</h2>
+            </div>
+            ${renderBlocks(sec.content)}
+          </section>
+        `).join('');
+
+      } catch (err) {
+        document.getElementById('content').innerHTML = `
+          <div class="bg-red-50 text-red-700 p-6 rounded-2xl border border-red-200">
+            <h3 class="font-bold text-lg mb-2">Помилка завантаження</h3>
+            <p>Перевірте шлях до JSON файлу (${jsonUrl}). Помилка: ${err.message}</p>
+          </div>`;
+      }
+    }
+
+    // Допоміжна функція рендерингу компонентів
+    function renderBlocks(blocks) {
+      return blocks.map(block => {
+        switch (block.type) {
+          case 'definition':
+            return `
+              <div class="bg-amber-50 border-l-4 border-amber-500 p-5 rounded-r-xl mb-6">
+                <h3 class="text-amber-900 font-bold text-sm uppercase tracking-wider mb-1">Термін</h3>
+                <p class="text-amber-950 font-medium leading-relaxed">
+                  <strong>${block.term}</strong> — ${block.text}
+                </p>
+              </div>`;
+          case 'warning':
+            return `
+              <div class="bg-red-50 border-l-4 border-red-500 p-5 rounded-r-xl mb-6">
+                <h3 class="text-red-900 font-bold text-sm uppercase tracking-wider mb-1">${block.title}</h3>
+                <p class="text-red-950 font-medium leading-relaxed">${block.text}</p>
+              </div>`;
+          case 'paragraph':
+            return `<p class="text-slate-600 mb-6 leading-relaxed">${block.text}</p>`;
+          case 'image':
+            return `
+              <div class="my-6">
+                <img src="${block.src}" alt="${block.alt}" class="w-full h-auto rounded-xl border border-slate-200 object-cover shadow-sm">
+                <p class="text-xs text-center text-slate-500 mt-2">${block.caption}</p>
+              </div>`;
+          case 'cards':
+            return `
+              <h3 class="font-bold text-slate-800 text-base mb-3">${block.title}</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                ${block.items.map(item => `
+                  <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl hover:border-brand-300 transition">
+                    <h4 class="font-bold text-brand-700 mb-2">${item.title}</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">${item.text}</p>
+                  </div>
+                `).join('')}
+              </div>`;
+          case 'twoColumns':
+            return `
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="border border-brand-200 bg-brand-50/40 rounded-xl p-5">
+                  <h3 class="font-bold text-brand-900 text-base mb-3">${block.col1.title}</h3>
+                  <ul class="text-xs sm:text-sm text-slate-700 space-y-2">
+                    ${block.col1.items.map(it => `<li class="flex items-start"><span class="text-brand-600 mr-2">•</span> <div>${it}</div></li>`).join('')}
+                  </ul>
+                </div>
+                <div class="border border-slate-200 bg-slate-50 rounded-xl p-5">
+                  <h3 class="font-bold text-slate-800 text-base mb-3">${block.col2.title}</h3>
+                  <ul class="text-xs sm:text-sm text-slate-700 space-y-2">
+                    ${block.col2.items.map(it => `<li class="flex items-start"><span class="text-brand-600 mr-2">•</span> <div>${it}</div></li>`).join('')}
+                  </ul>
+                </div>
+              </div>`;
+          case 'copyrightBanner':
+            return `
+              <div class="bg-slate-900 text-white p-5 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
+                <div class="flex items-center space-x-4">
+                  <div class="w-14 h-14 rounded-full bg-brand-500/20 border border-brand-400/40 flex items-center justify-center text-3xl font-extrabold text-brand-300 flex-shrink-0">©</div>
+                  <div>
+                    <h4 class="font-bold text-white text-base">${block.title}</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed mt-1">${block.text}</p>
+                  </div>
+                </div>
+                <div class="bg-white/10 px-4 py-2 rounded-xl text-xs font-mono text-brand-200 border border-white/10 whitespace-nowrap">${block.shortcut}</div>
+              </div>`;
+          case 'numberedList':
+            return `
+              <h3 class="font-bold text-slate-800 text-base mb-3">${block.title}</h3>
+              <div class="space-y-3 mb-6">
+                ${block.items.map((it, idx) => `
+                  <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl flex items-start space-x-3">
+                    <span class="w-6 h-6 bg-brand-600 text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">${idx + 1}</span>
+                    <div>
+                      <h4 class="font-bold text-slate-800 text-sm">${it.title}</h4>
+                      <p class="text-xs text-slate-600 mt-1">${it.text}</p>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>`;
+          case 'questions':
+            return `
+              <div class="space-y-4 mb-8">
+                ${block.items.map((q, i) => `
+                  <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                    <span class="text-brand-700 font-bold text-xs uppercase tracking-wider block mb-1">Запитання ${i + 1}</span>
+                    <p class="text-sm font-semibold text-slate-800">${q}</p>
+                  </div>
+                `).join('')}
+                ${block.practicalTask ? `
+                  <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                    <span class="text-brand-700 font-bold text-xs uppercase tracking-wider block mb-1">Практичне завдання</span>
+                    <p class="text-sm text-slate-700 leading-relaxed">${block.practicalTask}</p>
+                  </div>
+                ` : ''}
+              </div>`;
+          case 'fact':
+            return `
+              <div class="bg-gradient-to-r from-brand-900 to-emerald-800 text-white p-6 rounded-2xl shadow-sm">
+                <div class="text-brand-300 font-bold text-xs uppercase tracking-wider mb-2">${block.title}</div>
+                <p class="text-sm leading-relaxed text-brand-50">${block.text}</p>
+              </div>`;
+          default:
+            return '';
+        }
+      }).join('');
+    }
+
+    // Запуск при завантаженні сторінки
+    window.addEventListener('DOMContentLoaded', loadLesson);
+  </script>
+</body>
+</html>
