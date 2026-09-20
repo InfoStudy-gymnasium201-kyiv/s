@@ -1,6 +1,6 @@
 {
   "meta": {
-    "topicTag": "Урок 6",
+    "topicTag": "7 Клас - Урок 3",
     "badgeText": "Електронний підручник",
     "title": "Авторське право, ліцензії та академічна доброчесність",
     "description": "Опануйте основні поняття авторського права в цифрову еру, дізнайтеся про види ліцензій на програмне забезпечення та правила легального й етичного використання матеріалів з інтернету.",
@@ -34,7 +34,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x450/2b3a4a/ffffff?text=Авторське+право+та+знак+Copyright",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/7.3/1.jpg?raw=true",
           "alt": "Символ авторського права та захист інтелектуальної власності",
           "caption": "Мал. 4.1. Знак авторського права (©) вказує на наявність правовласника та захист матеріалу."
         },
@@ -87,7 +87,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x450/1e293b/ffffff?text=Класифікація+ліцензій+ПЗ",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/7.3/2.jpg?raw=true",
           "alt": "Класифікація програмного забезпечення за типом ліцензії",
           "caption": "Мал. 4.2 — Схема класифікації ПЗ: комерційне, пропрієтарне, умовно-безкоштовне та вільне."
         }
@@ -104,7 +104,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x450/0f172a/ffffff?text=Умовні+знаки+Creative+Commons",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/7.3/3.jpg?raw=true",
           "alt": "Позначення та види ліцензій Creative Commons",
           "caption": "Мал. 4.3 — Основні позначення Creative Commons: BY (вказівка авторства), NC (некомерційне), ND (без похідних творів), SA (поширення на тих самих умовах)."
         }
@@ -126,7 +126,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x450/334155/ffffff?text=Різниця+між+плагіатом+і+цитуванням",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/7.3/4.jpg?raw=true",
           "alt": "Правильне цитування проти плагіату",
           "caption": "Мал. 4.4 — Правила етичного використання інформації: коректні цитати та посилання."
         }
@@ -185,7 +185,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x450/1e1e2e/ffffff?text=Фільтрація+результатів+пошуку+Google+за+ліцензією",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/7.3/5.jpg?raw=true",
           "alt": "Налаштування пошуку зображень за ліцензією Creative Commons",
           "caption": "Мал. 4.5 — Використання фільтра «Права використання» в Google Зображеннях."
         }
@@ -202,7 +202,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x450/2d3748/ffffff?text=Принципи+академічної+доброчесності",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/7.3/6.jpg?raw=true",
           "alt": "Складові академічної доброчесності учня",
           "caption": "Мал. 4.6 — Принципи академічної доброчесності: самостійність, чесність, відповідальність."
         },
@@ -243,15 +243,15 @@
           "links": [
             {
               "label": "Інтерактивна гра",
-              "url": "https://infostudy-gymnasium201-kyiv.github.io/Extra/Interactive-Games/2627.6.6.html"
+              "url": "https://infostudy-gymnasium201-kyiv.github.io/Extra/Interactive-Games/2627.7.3a.html"
             },
             {
               "label": "Веб-конспект",
-              "url": "https://infostudy-gymnasium201-kyiv.github.io/Extra/LessonWriter/?=2627.6.6"
+              "url": "https://infostudy-gymnasium201-kyiv.github.io/Extra/LessonWriter/?=2627.7.3a"
             },
             {
               "label": "Тестування",
-              "url": "https://infostudy-gymnasium201-kyiv.github.io/Informatica-Forms/?=2627.6.6"
+              "url": "https://infostudy-gymnasium201-kyiv.github.io/Informatica-Forms/?=2627.7.3a"
             }
           ]
         }
