@@ -57,30 +57,33 @@
         <div class="sticky top-10 bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
           <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Зміст параграфа</h2>
           <nav id="toc" class="space-y-1 text-sm max-h-[calc(100vh-160px)] overflow-y-auto pr-1">
-            <!-- Зміст згенерується динамічно -->
+            <!-- Зміст генерується динамічно -->
           </nav>
         </div>
       </aside>
 
       <!-- Main Article Content -->
       <main id="content" class="lg:col-span-9 space-y-10">
-        <!-- Контент згенерується динамічно -->
+        <!-- Контент генерується динамічно -->
       </main>
     </div>
   </div>
 
   <script>
     async function loadLesson() {
-      // Отримуємо URL JSON-файлу з параметра query string (?data=lesson.json) або за замовчуванням
+      // 1. Зчитуємо ID уроку з URL-параметра (за замовчуванням 2627.7.3)
       const urlParams = new URLSearchParams(window.location.search);
-      const jsonUrl = urlParams.get('data') || 'lesson.json';
+      const lessonId = urlParams.get('lesson') || '2627.7.3';
+
+      // 2. Формуємо повне посилання до GitHub Repository
+      const jsonUrl = `https://raw.githubusercontent.com/InfoStudy-gymnasium201-kyiv/s/refs/heads/main/Lessons/${lessonId}.json`;
 
       try {
         const response = await fetch(jsonUrl);
-        if (!response.ok) throw new Error('Не вдалося завантажити JSON');
+        if (!response.ok) throw new Error(`Не вдалося знайти урок за кодом: ${lessonId}`);
         const lesson = await response.json();
 
-        // 1. Рендер Шапки (Hero)
+        // Рендер Шапки (Hero)
         document.getElementById('page-title').innerText = `${lesson.meta.title} | ${lesson.meta.subject}`;
         document.getElementById('hero-subject').innerHTML = `<span>${lesson.meta.subject}</span>`;
         document.getElementById('hero-title').innerText = lesson.meta.title;
@@ -91,7 +94,7 @@
           document.getElementById('hero-career-text').innerHTML = `<strong class="text-white font-semibold">Правовий та професійний орієнтир:</strong> ${lesson.meta.careerNote}`;
         }
 
-        // 2. Рендер Змісту (Sidebar)
+        // Рендер Змісту (Sidebar)
         const toc = document.getElementById('toc');
         toc.innerHTML = lesson.sections.map(sec => `
           <a href="#${sec.id}" class="flex items-center text-slate-600 hover:text-brand-700 hover:bg-brand-50 px-3 py-2 rounded-lg font-medium transition">
@@ -99,7 +102,7 @@
           </a>
         `).join('');
 
-        // 3. Рендер Секцій контенту
+        // Рендер Секцій контенту
         const mainContent = document.getElementById('content');
         mainContent.innerHTML = lesson.sections.map(sec => `
           <section id="${sec.id}" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm relative overflow-hidden scroll-mt-20">
@@ -114,13 +117,14 @@
       } catch (err) {
         document.getElementById('content').innerHTML = `
           <div class="bg-red-50 text-red-700 p-6 rounded-2xl border border-red-200">
-            <h3 class="font-bold text-lg mb-2">Помилка завантаження</h3>
-            <p>Перевірте шлях до JSON файлу (${jsonUrl}). Помилка: ${err.message}</p>
+            <h3 class="font-bold text-lg mb-2">Помилка завантаження уроку</h3>
+            <p>${err.message}</p>
+            <p class="text-xs text-red-500 mt-2">Спробуйте перевірити правильно написаний код уроку в посиланні.</p>
           </div>`;
       }
     }
 
-    // Допоміжна функція рендерингу компонентів
+    // Рендерер блоків
     function renderBlocks(blocks) {
       return blocks.map(block => {
         switch (block.type) {
@@ -227,7 +231,6 @@
       }).join('');
     }
 
-    // Запуск при завантаженні сторінки
     window.addEventListener('DOMContentLoaded', loadLesson);
   </script>
 </body>
