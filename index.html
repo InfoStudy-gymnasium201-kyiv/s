@@ -88,6 +88,17 @@
     </div>
   </div>
 
+  <!-- Modal / Lightbox для збільшення зображень -->
+  <div id="image-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300" onclick="closeModal()">
+    <div class="relative max-w-5xl w-full max-h-[90vh] flex flex-col items-center justify-center" onclick="event.stopPropagation()">
+      <button onclick="closeModal()" class="absolute -top-10 right-0 text-white hover:text-brand-400 text-3xl font-bold p-2 focus:outline-none transition" title="Закрити (Esc)">
+        &times;
+      </button>
+      <img id="modal-img" src="" alt="" class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl">
+      <p id="modal-caption" class="text-white/90 text-sm mt-4 text-center px-4 max-w-2xl"></p>
+    </div>
+  </div>
+
   <script>
     async function loadLesson() {
       const urlParams = new URLSearchParams(window.location.search);
@@ -161,8 +172,8 @@
           case 'image':
             return `
               <div class="my-6">
-                <img src="${block.src}" alt="${block.alt}" class="w-full h-auto rounded-xl border border-slate-200 object-cover shadow-sm">
-                <p class="text-xs text-center text-slate-500 mt-2">${block.caption}</p>
+                <img src="${block.src}" alt="${block.alt || ''}" onclick="openModal('${block.src}', '${(block.caption || block.alt || '').replace(/'/g, "\\'")}')" class="w-full h-auto rounded-xl border border-slate-200 object-cover shadow-sm cursor-pointer transition-transform hover:scale-[1.01]" title="Натисніть для збільшення">
+                <p class="text-xs text-center text-slate-500 mt-2">${block.caption || ''}</p>
               </div>`;
 
           case 'callout':
@@ -268,6 +279,31 @@
         }
       }).join('');
     }
+
+    // Функції керування модальним вікном для зображень
+    function openModal(src, caption) {
+      const modal = document.getElementById('image-modal');
+      const modalImg = document.getElementById('modal-img');
+      const modalCaption = document.getElementById('modal-caption');
+
+      modalImg.src = src;
+      modalCaption.innerText = caption || '';
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Блокуємо скрол фону
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('image-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = ''; // Відновлюємо скрол фону
+    }
+
+    // Закриття клавішею Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
 
     window.addEventListener('DOMContentLoaded', loadLesson);
   </script>
