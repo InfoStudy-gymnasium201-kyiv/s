@@ -46,7 +46,7 @@
               "description": "Виявлення закономірностей та формування задач у процесі опрацювання інформації.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.5.5",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "6",
@@ -54,7 +54,7 @@
               "description": "Поняття про інформацію, повідомлення та дані, їх відмінності і способи подання.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.5.6",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "7",
@@ -498,7 +498,7 @@
               "description": "Взаємодія hardware та software у комп'ютерних системах.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.6.5",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "6",
@@ -506,7 +506,7 @@
               "description": "Правила й інструменти встановлення та інсталяції/деінсталяції ПЗ.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.6.6",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "7",
@@ -635,7 +635,7 @@
             {
               "lessonNumber": "21",
               "title": "Створення простих вебресурсів",
-              "description": "Базові кроки проектування та наповнення простих вебсторінок.",
+              "description": "Базові кроки проектирования та наповнення простих вебсторінок.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.6.21",
               "posted": 0
@@ -928,7 +928,7 @@
               "description": "Правила цитування та юридично-етичні поняття захисту прав інтелектуальної власності.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.7.3",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "4",
@@ -936,7 +936,7 @@
               "description": "Електронна пошта, правила листування та обмін вкладеними файлами.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.7.4",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "5",
@@ -1017,7 +1017,7 @@
             {
               "lessonNumber": "13",
               "title": "Інформаційні процеси і системи: інформація, повідомлення. Дані, знання",
-              "description": "Сутність понять даних і знань в інформаційних системах.",
+              "description": "Сутність поняття даних і знань в інформаційних системах.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.7.13",
               "posted": 0
@@ -1266,7 +1266,7 @@
               "description": "Захист власних розробок та виконання тематичного проєкту.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.8.5",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "6",
@@ -1274,7 +1274,7 @@
               "description": "Аналіз кіберзагроз, фішингу та соціальної інженерії.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.8.6",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "7",
@@ -1967,7 +1967,7 @@
             {
               "lessonNumber": "35",
               "title": "Поняття про вебдизайн",
-              "description": "Принципи проектування сайтів, юзабіліті та адаптивна верстка.",
+              "description": "Принципи проектирования сайтів, юзабіліті та адаптивна верстка.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.9.35",
               "posted": 0
