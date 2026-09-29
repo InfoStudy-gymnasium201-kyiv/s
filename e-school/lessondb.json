@@ -1,4 +1,3 @@
-
 {
   "classes": [
     {
@@ -39,7 +38,7 @@
               "description": "Формування критичного мислення та вміння розрізняти достовірну і недостовірну інформацію.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.4",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "5",
@@ -47,7 +46,7 @@
               "description": "Ознайомлення з поняттям мереж та їх використанням для пошуку даних і спілкування.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.5",
-              "posted": 0
+              "posted": 1
             }
           ]
         },
@@ -347,7 +346,7 @@
               "description": "Значення інформаційних процесів у діяльності людини та суспільства.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.3",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "4",
@@ -355,7 +354,7 @@
               "description": "Основи кодування та декодування інформації за допомогою різних систем знаків.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.4",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "5",
@@ -363,7 +362,7 @@
               "description": "Еволюція обчислювальної техніки та засобів опрацювання інформації.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.5",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "6",
@@ -657,7 +656,7 @@
               "description": "Принцип функціонування глобальної мережі та її використання.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.3",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "4",
@@ -665,7 +664,7 @@
               "description": "Стратегії та види ефективного пошуку відомостей в мережі.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.4",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "5",
@@ -673,7 +672,7 @@
               "description": "Засоби спілкування та обміну даними через сучасні мережеві служби.",
               "duration": "45 хв",
               "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.5",
-              "posted": 0
+              "posted": 1
             },
             {
               "lessonNumber": "6",
