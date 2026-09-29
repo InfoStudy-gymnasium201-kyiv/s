@@ -1,1 +1,941 @@
 
+{
+  "classes": [
+    {
+      "classId": "2",
+      "className": "2 клас",
+      "topics": [
+        {
+          "topicId": "topic-2-1",
+          "topicTitle": "Тема 1. Інформація. Дії з інформацією",
+          "lessons": [
+            {
+              "lessonNumber": "1",
+              "title": "Правила безпечної поведінки у кабінеті інформатики. Навколишній світ та інформація",
+              "description": "Ознайомлення з правилами безпеки в кабінеті інформатики та поняттям інформації в навколишньому світі.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.1",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "2",
+              "title": "Сприймання людиною інформації",
+              "description": "Вивчення органів чуття та способів сприйняття інформації людиною.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.2",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "3",
+              "title": "Види інформації за способом подання",
+              "description": "Огляд текстового, графічного, звукового та інших способів подання інформації.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.3",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "4",
+              "title": "Правдива і неправдива інформація",
+              "description": "Формування критичного мислення та вміння розрізняти достовірну і недостовірну інформацію.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.4",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "5",
+              "title": "Мережі для отримання інформації та спілкування",
+              "description": "Ознайомлення з поняттям мереж та їх використанням для пошуку даних і спілкування.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.5",
+              "posted": 0
+            }
+          ]
+        },
+        {
+          "topicId": "topic-2-2",
+          "topicTitle": "Тема 2. Комп’ютерні пристрої для здійснення дій із інформацією",
+          "lessons": [
+            {
+              "lessonNumber": "6",
+              "title": "Комп’ютерна техніка, як засіб здійснення дій з інформацією",
+              "description": "Роль комп'ютерної техніки в опрацюванні, зберіганні та передаванні інформації.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.6",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "7",
+              "title": "Увімкнення та вимкнення комп'ютера та інших пристроїв",
+              "description": "Практичні навички коректного увімкнення та вимкнення цифрових пристроїв.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.7",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "8",
+              "title": "Пристрої для роботи з відео й зображеннями",
+              "description": "Ознайомлення з пристроями введення та виведення візуальних даних.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.8",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "9",
+              "title": "Пристрої для роботи зі звуком",
+              "description": "Вивчення мікрофонів, динаміків, навушників та інших акустичних пристроїв.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.9",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "10",
+              "title": "Пристрої для роботи з текстом",
+              "description": "Ознайомлення з клавіатурою, сканерами та іншими пристроями для введення й виведення тексту.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.10",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "11",
+              "title": "Пристрої для обчислень",
+              "description": "Історія та сучасні пристрої для виконання обчислювальних операцій.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.11",
+              "posted": 0
+            }
+          ]
+        },
+        {
+          "topicId": "topic-2-3",
+          "topicTitle": "Тема 3. Об’єкти",
+          "lessons": [
+            {
+              "lessonNumber": "12",
+              "title": "Об’єкти навколишнього світу, властивості конкретних об’єктів та значення властивостей",
+              "description": "Поняття об'єкта, його властивостей та значень цих властивостей.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.12",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "13",
+              "title": "Порівняння та впорядкування об’єктів",
+              "description": "Методи порівняння та сортування об'єктів за їхніми властивостями.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.13",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "14",
+              "title": "Середовище для об’єкта. Робочий стіл комп’ютера",
+              "description": "Ознайомлення з робочим столом комп'ютера як середовищем існування та взаємодії об'єктів.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.14",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "15",
+              "title": "Об’єкти, з якими працює комп’ютер",
+              "description": "Вивчення цифрових об'єктів (файли, папки, ярлики) та їх призначення.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.15",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "16",
+              "title": "Меню комп’ютерної програми. Огляд різних прикладів меню. Інструменти комп’ютерних програм",
+              "description": "Ознайомлення з інтерфейсом програм, призначенням меню та базовими інструментами.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.16",
+              "posted": 0
+            }
+          ]
+        },
+        {
+          "topicId": "topic-2-4",
+          "topicTitle": "Тема 4. Малюнки й моделі",
+          "lessons": [
+            {
+              "lessonNumber": "17",
+              "title": "Графічний редактор. Інструменти графічного редактора та їх налаштування",
+              "description": "Ознайомлення з інтерфейсом та основними інструментами графічного редактора.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.17",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "18",
+              "title": "Створення та редагування не складних малюнків. Добір кольорової гами малюнка. Збереження малюнків",
+              "description": "Практичні навички малювання, вибору палітри та збереження графічних файлів.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.18",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "19",
+              "title": "Інструмент малювання ліній в графічному редакторі",
+              "description": "Використання інструментів створення прямих та кривих ліній різної товщини.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.19",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "20",
+              "title": "Інструменти графічного редактора",
+              "description": "Поглиблення знань про додаткові інструменти малювання та заливки.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.20",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "21",
+              "title": "Дії з об’єктами в графічному редакторі",
+              "description": "Виділення, переміщення, копіювання та трансформація елементів малюнка.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.21",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "22",
+              "title": "Створення зображення об’єктів, що складаються з геометричних фігур та зміна значень властивостей",
+              "description": "Побудова складних зображень із готових геометричних форм.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.22",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "23",
+              "title": "Створення орнаменту",
+              "description": "Використання дій копіювання та відображення для створення повторюваних візерунків.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.23",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "24",
+              "title": "Інструменти для роботи з текстом у графічному редакторі",
+              "description": "Додавання та форматування текстових написів на зображеннях.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.24",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "25",
+              "title": "Пристрої, що полегшують роботу людини",
+              "description": "Огляд різноманітних пристроїв та гаджетів, що автоматизують повсякденну працю.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.25",
+              "posted": 0
+            }
+          ]
+        },
+        {
+          "topicId": "topic-2-5",
+          "topicTitle": "Тема 5. Лінійні алгоритми",
+          "lessons": [
+            {
+              "lessonNumber": "26",
+              "title": "План виконання завдання. Планування в нашому житті",
+              "description": "Поняття послідовності дій та важливості планування в повсякденному житті.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.26",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "27",
+              "title": "Поняття алгоритму. Виконавці алгоритмів",
+              "description": "Ознайомлення з визначенням алгоритму, їх складачами та виконавцями.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.27",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "28",
+              "title": "Комп’ютерне середовище виконавців",
+              "description": "Огляд програмного середовища для виконання алгоритмів.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.28",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "29",
+              "title": "Передбачення результату виконання алгоритму",
+              "description": "Аналіз послідовності команд та визначення кінцевого результату.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.29",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "30",
+              "title": "Зміна виконавця у середовищі Скретч",
+              "description": "Вибір, створення та налаштування нових спрайтів у Скретч.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.30",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "31",
+              "title": "Фрагмент малюнка та дії, які можна з ним виконувати",
+              "description": "Операції над частинами зображення в середовищі створення проєктів.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.31",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "32",
+              "title": "Створення малюнків за готовими алгоритмами",
+              "description": "Виконання алгоритмів малювання для отримання заданих графічних об'єктів.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.32",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "33",
+              "title": "Створення алгоритмів побудови малюнків у середовищі Скретч. Проєкт",
+              "description": "Розробка власних програм для створення малюнків у середовищі Скретч.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.33",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "34",
+              "title": "Презентація проєкту",
+              "description": "Демонстрація та захист власного створеного проєкту в Скретч.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.34",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "35",
+              "title": "Повторення і систематизація навчального матеріалу за рік",
+              "description": "Узагальнення знань та вмінь, здобутих протягом навчального року.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.2.35",
+              "posted": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "3",
+      "className": "3 клас",
+      "topics": [
+        {
+          "topicId": "topic-3-1",
+          "topicTitle": "Тема 1. Інформація. Дії з інформацією. Комп’ютерні пристрої для здійснення дій із інформацією",
+          "lessons": [
+            {
+              "lessonNumber": "1",
+              "title": "Правила безпечної роботи з комп’ютерними пристроями",
+              "description": "Повторення та поглиблення знань з техніки безпеки при роботі за комп'ютером.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.1",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "2",
+              "title": "Способи подання повідомлень, носії повідомлень",
+              "description": "Ознайомлення з різними формами подання повідомлень та сучасними й історичними носіями даних.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.2",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "3",
+              "title": "Роль інформації в житті людини. Дії з інформацією",
+              "description": "Значення інформаційних процесів у діяльності людини та суспільства.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.3",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "4",
+              "title": "Поняття символу. Кодування і декодування текстових повідомлень",
+              "description": "Основи кодування та декодування інформації за допомогою різних систем знаків.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.4",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "5",
+              "title": "Історія виникнення пристроїв для роботи з інформацією",
+              "description": "Еволюція обчислювальної техніки та засобів опрацювання інформації.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.5",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "6",
+              "title": "Пристрої введення та виведення інформації",
+              "description": "Класифікація апаратного забезпечення комп'ютера за функціональним призначенням.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.6",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "7",
+              "title": "Введення текстових даних",
+              "description": "Формування навичок швидкого та правильного введення тексту з клавіатури.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.7",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "8",
+              "title": "Робочий стіл комп’ютера",
+              "description": "Організація робочого простору та використання елементів управління ОС.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.8",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "9",
+              "title": "Структурування інформації. Поняття файлу і папки",
+              "description": "Основи файлової системи, правила впорядкування та збереження даних.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.9",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "10",
+              "title": "Поняття про мережу Інтернет, програма-браузер, веб-сторінка, веб-сайт, гіперпосилання",
+              "description": "Базові поняття веб-простору та навігація в мережі Інтернет.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.10",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "11",
+              "title": "Безпечна робота в Інтернеті",
+              "description": "Правила інтернет-гігієни, захист персональних даних та загрози в мережі.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.11",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "12",
+              "title": "Віртуальні бібліотеки, довідники, енциклопедії, словники. Авторське право",
+              "description": "Пошук навчальних ресурсів та дотримання етичних і правових норм використання чужих праць.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.12",
+              "posted": 0
+            }
+          ]
+        },
+        {
+          "topicId": "topic-3-2",
+          "topicTitle": "Тема 2. Комп’ютерні програми. Меню та інструменти. Об’єкт. Властивості об’єкта",
+          "lessons": [
+            {
+              "lessonNumber": "13",
+              "title": "Текстові редактори. Середовища для читання текстів. Закладки в тексті, цитати",
+              "description": "Ознайомлення з програмами для роботи з текстом та інструментами навігації.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.13",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "14",
+              "title": "Види об'єктів: текстові, графічні. Уведення символів за допомогою клавіатури",
+              "description": "Розрізнення типів інформаційних об'єктів та практичний набір тексту.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.14",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "15",
+              "title": "Редагування тексту",
+              "description": "Виправлення помилок, вилучення, вставка та заміна символів у тексті.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.15",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "16",
+              "title": "Основні команди редагування: вирізати, копіювати, вставити, видалити",
+              "description": "Використання буфера обміну для оперативних дій із фрагментами тексту.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.16",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "17",
+              "title": "Форматування тексту. Зміна значень властивостей об’єкта (колір тексту, шрифт, накреслення)",
+              "description": "Зміна зовнішнього вигляду символів та абзаців текстового документа.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.17",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "18",
+              "title": "Доповнення текстів зображеннями",
+              "description": "Вставка графічних об'єктів та ілюстрацій у текстовий документ.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.18",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "19",
+              "title": "Інформаційний об’єкт. Властивості об'єкта. Створення моделі об’єкта за заданими властивостями",
+              "description": "Аналіз характеристик об'єктів та розробка їх інформаційних моделей.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.19",
+              "posted": 0
+            }
+          ]
+        },
+        {
+          "topicId": "topic-3-3",
+          "topicTitle": "Тема 3. Створення інформаційних моделей. Змінення готових. Практичне використання",
+          "lessons": [
+            {
+              "lessonNumber": "20",
+              "title": "Комп’ютерні презентації. Режим показу презентації",
+              "description": "Поняття презентації, її призначення та перегляд у режимі демонстрації.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.20",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "21",
+              "title": "Редагування презентацій. Утворення нового слайду",
+              "description": "Додавання, вилучення та зміна порядку слайдів у презентаційному файлі.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.21",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "22",
+              "title": "Утворення текстового вікна/поля. Доповнення презентації текстом",
+              "description": "Розміщення та форматування текстових блоків на слайдах.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.22",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "23",
+              "title": "Доповнення презентації зображенням, схемою. Форматування презентації",
+              "description": "Оформлення слайдів за допомогою малюнків, схем та стилів.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.23",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "24",
+              "title": "Створення власної комп’ютерної презентації",
+              "description": "Практична робота зі розробки невеликої презентації на обрану тему.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.24",
+              "posted": 0
+            }
+          ]
+        },
+        {
+          "topicId": "topic-3-4",
+          "topicTitle": "Тема 4. Лінійні алгоритми",
+          "lessons": [
+            {
+              "lessonNumber": "25",
+              "title": "Команди і виконавці, алгоритми",
+              "description": "Поняття команди, системи команд виконавця та алгоритму.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.25",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "26",
+              "title": "Способи подання алгоритму. Запис лінійних алгоритмів. Знаходження та виправлення помилок у алгоритмах",
+              "description": "Словесний та графічний записи алгоритмів, пошук та усунення помилок.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.26",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "27",
+              "title": "Середовище програмування Скретч. Етапи створення програми",
+              "description": "Знайомство з блоковим програмуванням у Скретч та послідовністю розробки проєкту.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.27",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "28",
+              "title": "Створення програм у середовищі Скретч за власними алгоритмами",
+              "description": "Складання скриптів для виконавців за власними лінійними сценаріями.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.28",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "29",
+              "title": "Створення зображень за власними алгоритмами",
+              "description": "Використання команд малювання у Скретч для створення графіки.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.29",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "30",
+              "title": "Логічні висловлювання",
+              "description": "Поняття істинних та хибних висловлювань у повсякденності та програмуванні.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.30",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "31",
+              "title": "Створення власного проєкту в середовищі Скретч (Частина 1)",
+              "description": "Планування та початок реалізації індивідуального проєкту в Скретч.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.31",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "32",
+              "title": "Створення власного проєкту в середовищі Скретч (Частина 2)",
+              "description": "Продовження розробки проєкту: додавання сценаріїв, звуків та анімації.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.32",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "33",
+              "title": "Створення власного проєкту в середовищі Скретч (Частина 3)",
+              "description": "Завершення роботи над проєктом, його тести та налагодження.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.33",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "34",
+              "title": "Презентація навчальних проєктів",
+              "description": "Публічна демонстрація та обговорення учнівських робіт.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.34",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "35",
+              "title": "Повторення і систематизація навчального матеріалу за рік",
+              "description": "Закріплення та обобщення ключових знань за 3 клас.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.3.35",
+              "posted": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "classId": "4",
+      "className": "4 клас",
+      "topics": [
+        {
+          "topicId": "topic-4-1",
+          "topicTitle": "Тема 1. Інформація. Дії з інформацією",
+          "lessons": [
+            {
+              "lessonNumber": "1",
+              "title": "Правила поведінки та безпеки під час роботи з комп’ютерними пристроями",
+              "description": "Повторення правил безпеки життєдіяльності в кабінеті інформатики.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.1",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "2",
+              "title": "Інформація навколо нас. Дії з інформацією",
+              "description": "Поглиблення уявлень про інформаційні процеси в сучасному світі.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.2",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "3",
+              "title": "Мережа інтернет",
+              "description": "Принцип функціонування глобальної мережі та її використання.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.3",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "4",
+              "title": "Пошук інформації у мережі Інтернет",
+              "description": "Стратегії та види ефективного пошуку відомостей в мережі.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.4",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "5",
+              "title": "Інформаційна взаємодія",
+              "description": "Засоби спілкування та обміну даними через сучасні мережеві служби.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.5",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "6",
+              "title": "Критичне оцінювання інформації",
+              "description": "Аналіз достовірності знайдених даних та захист від дезінформації.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.6",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "7",
+              "title": "Навчання в інтернеті",
+              "description": "Використання освітніх онлайн-платформ та дистанційних ресурсів.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.7",
+              "posted": 0
+            }
+          ]
+        },
+        {
+          "topicId": "topic-4-2",
+          "topicTitle": "Тема 2. Комп’ютерні пристрої для здійснення дій із інформацією",
+          "lessons": [
+            {
+              "lessonNumber": "8",
+              "title": "Цифрові пристрої, їх призначення і взаємодія",
+              "description": "Вивчення персональних гаджетів, смарт-пристроїв та їх узгодженої роботи.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.8",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "9",
+              "title": "Сучасні носії інформації. Пам'ять комп’ютера (внутрішня та зовнішня)",
+              "description": "Класифікація видів пам'яті комп'ютера та носіїв збереження даних.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.9",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "10",
+              "title": "Файли і папки",
+              "description": "Поняття структури збереження даних у комп'ютерних системах.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.10",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "11",
+              "title": "Операції з файлами та папками",
+              "description": "Практикум зі створення, перейменування, копіювання, переміщення та вилучення файлів.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.11",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "12",
+              "title": "Програмне забезпечення комп’ютера",
+              "description": "Види ПЗ: системне, прикладне та інструментальні засоби.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.12",
+              "posted": 0
+            }
+          ]
+        },
+        {
+          "topicId": "topic-4-3",
+          "topicTitle": "Тема 3. Створення інформаційних моделей. Змінення готових. Використання. Лінійні алгоритми",
+          "lessons": [
+            {
+              "lessonNumber": "13",
+              "title": "Поняття моделі та моделювання",
+              "description": "Ознайомлення з моделями об'єктів, явищ і процесів та їх видами.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.13",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "14",
+              "title": "Алгоритми та способы їх подання. Розв’язування задач з використанням лінійних алгоритмів у середовищі Скретч",
+              "description": "Реалізація послідовних кроків розв'язання задач у Скретч.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.14",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "15",
+              "title": "Логічні висловлювання",
+              "description": "Використання умов і логічних виразів під час складання алгоритмів.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.15",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "16",
+              "title": "Поняття розгалуження",
+              "description": "Ознайомлення з розгалуженими алгоритмами та умовами їх виконання.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.16",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "17",
+              "title": "Алгоритми з розгалуженням",
+              "description": "Складання та аналіз алгоритмів із повним і неповним розгалуженням.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.17",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "18",
+              "title": "Інструктаж з БЖД. Розв’язування задач із використанням алгоритмів із розгалуженням у середовищі Скретч",
+              "description": "Практичне створення програм із розгалуженнями у Скретч.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.18",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "19",
+              "title": "Інструктаж з БЖД. Поняття повторення. Алгоритми з повторенням",
+              "description": "Вивчення циклічних процесів та способів їх опису.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.19",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "20",
+              "title": "Алгоритми з повторенням з умовою",
+              "description": "Програмування циклів, вихід із яких залежить від виконання певної умови.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.20",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "21",
+              "title": "Алгоритми із заданою кількістю повторень",
+              "description": "Побудова програм із циклами типу «повторити N разів».",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.21",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "22",
+              "title": "Відкриваємо секрети програмування (Частина 1)",
+              "description": "Розширені можливості та лайфхаки створення скриптів у Скретч.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.22",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "23",
+              "title": "Відкриваємо секрети програмування (Частина 2)",
+              "description": "Оптимізація та вдосконалення програмного коду проєктів.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.23",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "24",
+              "title": "Знайомство з роботами та робототехнікою",
+              "description": "Базові засади робототехніки, будови роботів та їх програмування.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.24",
+              "posted": 0
+            }
+          ]
+        },
+        {
+          "topicId": "topic-4-4",
+          "topicTitle": "Тема 4. Об’єкт. Властивості об’єкта",
+          "lessons": [
+            {
+              "lessonNumber": "25",
+              "title": "Поняття комп’ютерної презентації",
+              "description": "Повторення та розширення знань про призначення презентацій.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.25",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "26",
+              "title": "Етапи створення комп’ютерної презентації",
+              "description": "Планування структури, збір матеріалу та дизайн слайдів.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.26",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "27",
+              "title": "Демонстрування комп’ютерної презентації",
+              "description": "Налаштування показу слайдів та виступу перед аудиторією.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.27",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "28",
+              "title": "Редактор комп’ютерних презентацій",
+              "description": "Поглиблене вивчення функціоналу редактора презентацій.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.28",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "29",
+              "title": "Текстові об’єкти на слайдах презентацій",
+              "description": "Розміщення, вирівнювання та стилізація текстових заголовок та списків.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.29",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "30",
+              "title": "Графічні об’єкти на слайдах презентацій",
+              "description": "Вставка зображень, фігур, пиктограм та їх налаштування.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.30",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "31",
+              "title": "Додавання анімаційних ефектів до об’єктів презентації",
+              "description": "Налаштування анімації входу, виділення та виходу для елементів слайда.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.31",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "32",
+              "title": "Створюємо навчальний проєкт (Частина 1)",
+              "description": "Вибір теми, планування та збір матеріалів для підсумкового проєкту.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.32",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "33",
+              "title": "Створюємо навчальний проєкт (Частина 2)",
+              "description": "Практичне верстання та візуальне оформлення підсумкового проєкту.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.33",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "34",
+              "title": "Захист навчального проєкту",
+              "description": "Презентація та захист власної навчальної роботи перед класом.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.34",
+              "posted": 0
+            },
+            {
+              "lessonNumber": "35",
+              "title": "Повторення та узагальнення знань",
+              "description": "Підсумкове повторення навчального матеріалу з інформатики за 4 клас.",
+              "duration": "45 хв",
+              "lessonUrl": "https://infostudy-gymnasium201-kyiv.github.io/s/?lesson=2627.4.35",
+              "posted": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
