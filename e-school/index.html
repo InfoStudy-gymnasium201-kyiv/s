@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
-  
+
   <script>
     tailwind.config = {
       theme: {
@@ -89,13 +89,20 @@
 </head>
 <body class="text-slate-800 antialiased selection:bg-kids-pink selection:text-white pb-16">
 
-  <!-- Top Kid Header (Виправлена адаптивність) -->
+  <!-- Top Kid Header -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b-4 border-kids-purple/20 shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-0 sm:h-20 flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0">
-      
-      <!-- Logo & Title -->
+
+      <!-- Logo, Home Button & Title -->
       <div class="flex items-center space-x-3 w-full sm:w-auto justify-between sm:justify-start">
         <div class="flex items-center space-x-2.5 sm:space-x-4 min-w-0">
+          
+          <!-- Кнопка повернення на головну сторінку -->
+          <a href="https://infostudy-gymnasium201-kyiv.github.io/e-school/" class="flex items-center space-x-1.5 bg-kids-yellow hover:bg-yellow-400 text-purple-950 px-3 py-2 rounded-2xl border-2 border-yellow-400 shadow-pop-sm font-heading font-bold text-xs sm:text-sm transition bounce-hover flex-shrink-0" title="Повернутися на головну сторінку">
+            <span class="text-base sm:text-lg">🏠</span>
+            <span class="hidden xs:inline">На головну</span>
+          </a>
+
           <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-tr from-kids-purple to-kids-pink flex items-center justify-center text-xl sm:text-2xl shadow-pop-sm text-white transform -rotate-3 hover:rotate-0 transition flex-shrink-0">
             🚀
           </div>
@@ -112,7 +119,7 @@
 
       <!-- Controls: Font Size Switcher & Badge -->
       <div class="flex items-center justify-between sm:justify-end w-full sm:w-auto space-x-2 sm:space-x-4">
-        
+
         <!-- Font Size Adjuster for Kids/Accessibility -->
         <div class="flex items-center bg-purple-100 p-1 rounded-2xl border-2 border-kids-purple/30">
           <button id="btn-font-normal" onclick="setFontSize('normal')" class="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-xl font-bold text-xs sm:text-sm transition bg-white text-kids-purple shadow-sm">
@@ -137,14 +144,14 @@
 
   <!-- Hero Section -->
   <section class="bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-white py-8 sm:py-12 md:py-16 relative overflow-hidden shadow-lg border-b-8 border-kids-yellow">
-    
+
     <!-- Decorative Floating Elements -->
     <div class="absolute -top-6 -left-6 text-5xl sm:text-6xl opacity-30 animate-float pointer-events-none">🎈</div>
     <div class="absolute top-1/2 right-4 text-6xl sm:text-7xl opacity-25 animate-float-delayed pointer-events-none">⭐</div>
     <div class="absolute bottom-2 left-1/3 text-4xl sm:text-5xl opacity-20 animate-float pointer-events-none">🎨</div>
 
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
-      
+
       <div id="hero-subject" class="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md border-2 border-white/40 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full text-white text-xs sm:text-base font-bold mb-3 sm:mb-4 shadow-sm">
         <span>⭐ Завантаження предмета...</span>
       </div>
@@ -168,17 +175,24 @@
   <!-- Main Layout -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-12">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
-      
+
       <!-- Kid Sidebar / Interactive Navigation -->
       <aside class="lg:col-span-3">
-        <div class="lg:sticky lg:top-28 bg-white rounded-3xl p-4 sm:p-6 border-4 border-purple-200 shadow-pop">
-          <div class="flex items-center space-x-2 mb-3 sm:mb-4 pb-2 sm:pb-3 border-b-2 border-purple-100">
+        <div class="lg:sticky lg:top-28 bg-white rounded-3xl p-4 sm:p-6 border-4 border-purple-200 shadow-pop space-y-4">
+          <div class="flex items-center space-x-2 pb-2 sm:pb-3 border-b-2 border-purple-100">
             <span class="text-xl sm:text-2xl">🗺️</span>
             <h2 class="text-base sm:text-lg font-black font-heading text-purple-900 uppercase tracking-wide">Карта уроку</h2>
           </div>
-          <nav id="toc" class="space-y-1.5 sm:space-y-2 text-sm sm:text-base font-bold max-h-[30vh] lg:max-h-[calc(100vh-200px)] overflow-y-auto pr-1">
+          <nav id="toc" class="space-y-1.5 sm:space-y-2 text-sm sm:text-base font-bold max-h-[30vh] lg:max-h-[calc(100vh-260px)] overflow-y-auto pr-1">
             <!-- Dynamic TOC Generated Here -->
           </nav>
+          
+          <!-- Кнопка повернення додому в бічному меню -->
+          <div class="pt-3 border-t-2 border-purple-100">
+            <a href="https://infostudy-gymnasium201-kyiv.github.io/e-school/" class="w-full flex items-center justify-center space-x-2 bg-kids-yellow hover:bg-yellow-400 text-purple-950 p-2.5 rounded-2xl border-2 border-yellow-400 shadow-pop-sm font-heading font-black text-sm transition bounce-hover">
+              <span>🏠 Повернутися на головну</span>
+            </a>
+          </div>
         </div>
       </aside>
 
@@ -192,6 +206,14 @@
       </main>
 
     </div>
+  </div>
+
+  <!-- Нижня кнопка повернення для зручності після проходження уроку -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 text-center">
+    <a href="https://infostudy-gymnasium201-kyiv.github.io/e-school/" class="inline-flex items-center space-x-3 bg-gradient-to-r from-kids-purple to-kids-pink text-white px-8 py-4 rounded-3xl border-4 border-white shadow-pop font-heading font-black text-lg sm:text-xl transition bounce-hover">
+      <span>🏠 Повернутися до всіх уроків</span>
+      <span>🚀</span>
+    </a>
   </div>
 
   <!-- Modal / Lightbox для збільшення зображень у дитячому стилі -->
@@ -212,7 +234,7 @@
     function setFontSize(size) {
       const contentEl = document.getElementById('content');
       contentEl.classList.remove('text-size-normal', 'text-size-large', 'text-size-xlarge');
-      
+
       document.getElementById('btn-font-normal').className = "px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-xl font-bold text-xs sm:text-sm transition text-slate-600 hover:text-kids-purple";
       document.getElementById('btn-font-large').className = "px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-xl font-bold text-xs sm:text-base transition text-slate-600 hover:text-kids-purple";
       document.getElementById('btn-font-xlarge').className = "px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-xl font-extrabold text-xs sm:text-lg transition text-slate-600 hover:text-kids-purple";
@@ -244,7 +266,7 @@
         // 1. Header Rendering
         document.getElementById('header-tag').innerText = lesson.meta.topicTag || lesson.meta.subject || 'Урок';
         document.getElementById('header-title').innerText = lesson.meta.title;
-        
+
         if (lesson.meta.badgeText) {
           document.getElementById('header-badge').innerText = lesson.meta.badgeText;
           document.getElementById('header-badge-container').classList.remove('hidden');
@@ -298,7 +320,7 @@
 
           return `
             <section id="${sec.id}" class="bg-white rounded-3xl p-4 sm:p-8 border-4 ${colorClass} shadow-pop relative overflow-hidden scroll-mt-24 sm:scroll-mt-28">
-              
+
               <!-- Section Header -->
               <div class="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-3 mb-4 sm:mb-6 pb-3 sm:pb-4 border-b-2 border-slate-200/80">
                 <span class="${badgeClass} font-heading font-black text-xs sm:text-base px-3 py-1 sm:px-4 sm:py-1.5 rounded-2xl uppercase tracking-wider shadow-sm flex items-center gap-1.5 w-max">
@@ -332,7 +354,7 @@
     function renderBlocks(blocks) {
       return blocks.map(block => {
         switch (block.type) {
-          
+
           case 'paragraph':
             return `<p class="text-slate-800 font-medium mb-4 sm:mb-6 leading-relaxed">${block.text}</p>`;
 
@@ -387,7 +409,7 @@
                   <span>📂</span> ${block.title}
                 </h3>
                 ${block.description ? `<p class="text-slate-700 font-semibold mb-3 sm:mb-4 text-sm sm:text-base">${block.description}</p>` : ''}
-                
+
                 ${block.items ? `
                   <div class="space-y-2.5 sm:space-y-3">
                     ${block.items.map(it => `
