@@ -180,7 +180,7 @@
       <aside class="lg:col-span-3">
         <div class="lg:sticky lg:top-28 bg-white rounded-3xl p-4 sm:p-6 border-4 border-purple-200 shadow-pop space-y-4">
           <div class="flex items-center space-x-2 pb-2 sm:pb-3 border-b-2 border-purple-100">
-            <span class="text-xl sm:text-2xl">🗺️</span>
+            <span class="text-xl sm:text-2xl">🗺️️</span>
             <h2 class="text-base sm:text-lg font-black font-heading text-purple-900 uppercase tracking-wide">Карта уроку</h2>
           </div>
           <nav id="toc" class="space-y-1.5 sm:space-y-2 text-sm sm:text-base font-bold max-h-[30vh] lg:max-h-[calc(100vh-260px)] overflow-y-auto pr-1">
@@ -359,6 +359,9 @@
             return `<p class="text-slate-800 font-medium mb-4 sm:mb-6 leading-relaxed">${block.text}</p>`;
 
           case 'image':
+            if (block.src && block.src.includes('placehold.co')) {
+              return '';
+            }
             return `
               <div class="my-6 sm:my-8 text-center bg-purple-50 p-3 sm:p-4 rounded-3xl border-4 border-purple-200 shadow-pop-sm">
                 <img src="${block.src}" alt="${block.alt || ''}" onclick="openModal('${block.src}', '${(block.caption || block.alt || '').replace(/'/g, "\\'")}')" class="w-full h-auto rounded-2xl border-2 border-white object-cover shadow-sm mx-auto max-h-[380px] sm:max-h-[480px] cursor-pointer transition-transform hover:scale-[1.01]" title="🔍 Натисни, щоб збільшити!">
