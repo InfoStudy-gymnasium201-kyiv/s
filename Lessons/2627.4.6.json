@@ -34,7 +34,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x450/4A90E2/FFFFFF?text=Факт+чи+Вигадка",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/4.6/1.jpg?raw=true",
           "alt": "Порівняння факту та вигадки",
           "caption": "Мал. 6.1. Будь-яка інформація потребує перевірки перед тим, як їй повірити."
         },
@@ -82,7 +82,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x450/E74C3C/FFFFFF?text=Ознаки+Фейку",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/4.6/2.jpg?raw=true",
           "alt": "Ознаки неправдивої інформації",
           "caption": "Мал. 6.2 — Основні маркери неправдивих новин у мережі."
         }
@@ -99,7 +99,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x450/2ECC71/FFFFFF?text=Схема+Критичного+Аналiзу",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/4.6/3.jpg?raw=true",
           "alt": "Алгоритм перевірки інформації",
           "caption": "Мал. 6.3 — Алгоритм дій під час оцінювання будь-якого повідомлення."
         }
@@ -116,7 +116,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x450/F39C12/FFFFFF?text=Джерела+Iнформацiї",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/4.6/4.jpg?raw=true",
           "alt": "Види джерел інформації",
           "caption": "Мал. 6.4 — Класифікація джерел інформації за рівнем довіри."
         }
@@ -170,7 +170,7 @@
         },
         {
           "type": "image",
-          "src": "https://placehold.co/800x450/9B59B6/FFFFFF?text=Правило+Поширення+Iнформацiї",
+          "src": "https://github.com/InfoStudy-gymnasium201-kyiv/s/blob/main/Images/4.6/5.jpg?raw=true",
           "alt": "Правило перед репостом",
           "caption": "Мал. 6.5 — Золоте правило: «Не перевірив — не поширюй!»"
         }
@@ -212,10 +212,6 @@
             {
               "label": "Веб-конспект",
               "url": "https://infostudy-gymnasium201-kyiv.github.io/Extra/LessonWriter/?=2627.4.6"
-            },
-            {
-              "label": "Тестування",
-              "url": "https://infostudy-gymnasium201-kyiv.github.io/Informatica-Forms/?=2627.4.6"
             }
           ]
         }
