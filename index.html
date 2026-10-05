@@ -181,7 +181,7 @@
       }
     }
 
-    // Универсальний рендерер блоків
+    // Універсальний рендерер блоків
     function renderBlocks(blocks) {
       return blocks.map(block => {
         switch (block.type) {
@@ -189,6 +189,10 @@
             return `<p class="text-slate-600 mb-6 leading-relaxed">${block.text}</p>`;
 
           case 'image':
+            // Перевіряємо, чи посилання містить placehold.co
+            if (block.src && block.src.includes('placehold.co')) {
+              return '';
+            }
             return `
               <div class="my-6">
                 <img src="${block.src}" alt="${block.alt || ''}" onclick="openModal('${block.src}', '${(block.caption || block.alt || '').replace(/'/g, "\\'")}')" class="w-full h-auto rounded-xl border border-slate-200 object-cover shadow-sm cursor-pointer transition-transform hover:scale-[1.01]" title="Натисніть для збільшення">
