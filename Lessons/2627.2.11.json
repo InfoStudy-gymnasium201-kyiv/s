@@ -144,8 +144,24 @@
       ]
     },
     {
+  "id": "video-lesson",
+  "stepNumber": 7,
+  "title": "Перегляд відеоматеріалу",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Перегляньте навчальне відео:"
+    },
+    {
+      "type": "video",
+      "title": "Що таке комп'ютер?",
+      "url": "https://youtu.be/ZP1YC7xeYZ8"
+    }
+  ]
+},
+    {
       "id": "summary",
-      "stepNumber": 7,
+      "stepNumber": 8,
       "title": "Підсумки та оцінювання знань",
       "content": [
         {
